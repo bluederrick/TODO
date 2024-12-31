@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo_task</title>
+    <link rel="stylesheet" href="/UI/style.css" />
+    <link type="text/css" rel="stylesheet" href="/css/addTask.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="Todo-app">
+        <h2>Todo-app <img src="/images/todo list.png" /></h2>
+        <label for="priority">Title:</label>
+        <input
+          type="text"
+          id="title-input"
+          placeholder="Task Title"
+          class="title-input"
+        />
+        <label class="priority" for="priority">Priority:</label>
+
+        <select id="priority">
+          <option value=""></option>
+          <option value="Low">Low</option>
+          <option value="Medium">Medium</option>
+          <option value="High">High</option>
+        </select>
+
+        <textarea
+          id="description-input"
+          placeholder="Start typing here..."
+        ></textarea>
+
+        <label for="task-date">Task Deadline:</label>
+        <input type="date" placeholder="deadline" id="dateValue" class="date" />
+        <div class="row">
+          <input
+            type="text"
+            id="input-box"
+            placeholder="Notes: Additional comments or details"
+          />
+          <!-- <input type="text" id="task" placeholder="Enter your task" required /> -->
+          <button class="slide-btn" onclick="AddTask()">Add task</button>
+        </div>
+        <ul id="list-container">
+          <!-- <li class="checked">task 1</li>
+             <li>task 1</li>
+             <li>task 1</li> -->
+        </ul>
+      </div>
+    </div>
+    <script src="/javascript/addTask.js"></script>
+  </body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link type="text/css" rel="stylesheet" href="/css/registration.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>Registration</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="sub-container">
+        <div class="regForm">
+          <!-- <div  class="left"><img src="./images/reg.png"></div> -->
+          <div class="carousel-container">
+            <!-- <div class="carousel"> -->
+            <!-- <div class="carousel-item">
+              <img
+                src="images/reg.png"
+                alt="Image 1"
+                style="height: 100vh; width: 100vw"
+              />
+            </div> -->
+            <div class="carousel-item" style="background-color: cadetblue">
+              <img
+                src="/images/andrew-neel-cckf4TsHAuw-unsplash.jpg"
+                alt="Image 2"
+                style="height: 100vh; width: 100vw; background-color: cadetblue"
+              />
+            </div>
+            <!-- </div> -->
+          </div>
+          <div class="right">
+            <h2>Registration</h2>
+            <form>
+              <div class="section1">
+                <div class="input01">
+                  <label for="Name">Full Name</label>
+                  <input
+                    type="text"
+                    name="fullName"
+                    id="fullName"
+                    placeholder=" Enter your Full name"
+                  />
+                </div>
+                <div class="input02">
+                  <label for="Email">Email</label>
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="Enter your email address"
+                  />
+                </div>
+              </div>
+              <div class="section2">
+                <div class="input01">
+                  <label for="Phone Number">Phone Number</label>
+                  <input
+                    type="text"
+                    name="phoneNumber"
+                    id="phoneNumber"
+                    placeholder="Enter your phone number"
+                  />
+                </div>
+                <div class="input01">
+                  <label for="password">Password</label>
+                  <input
+                    type="password"
+                    name="password"
+                    id="password"
+                    placeholder="Enter your password"
+                  />
+                </div>
+              </div>
+              <div class="radio">
+                <div class="radio1">
+                  <input type="radio" name="gender" value="male" />
+                  <label for="Gender">male</label>
+                </div>
+                <div class="radio2">
+                  <input type="radio" name="gender" value="female" />
+                  <label for="Gender">female</label>
+                </div>
+              </div>
+              <button id="submit">Submit</button>
+              <h2 class="sign">
+                Already have an account
+                <a href="http://localhost:2000/signin">Log in</a>
+              </h2>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="/javascript/registration.js"></script>
+  </body>
+</html>
